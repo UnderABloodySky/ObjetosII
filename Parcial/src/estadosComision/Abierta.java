@@ -1,16 +1,16 @@
 package estadosComision;
 
-import comision.ComisionObj;
+import comision.Comision;
 
 public class Abierta extends EstadoEnComun {
 
 	@Override
-	public boolean estaDisponible(ComisionObj _comision) {
+	public boolean estaDisponible(Comision _comision) {
 		return _comision.cantidadDeAlumnos() < _comision.cupo();
 	}
 
 	@Override
-	public boolean cumplePara(ComisionObj _comision) {
+	public boolean cumplePara(Comision _comision) {
 		return _comision.cantidadDeAlumnos() < _comision.cupo();
 	}
 

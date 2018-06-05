@@ -1,23 +1,23 @@
 package estadosComision;
 
-import comision.ComisionObj;
+import comision.Comision;
 import persona.Persona;
 
 public class Cerrada extends EstadoEnComun {
 
 	@Override
-	public boolean inscribir(Persona _persona, ComisionObj _comision) {
+	public boolean inscribir(Persona _persona, Comision _comision) {
 		return false; //Preguntar.
 		//En realidad inscribir en este punto deberia ser imposible.
 	}
 
 	@Override
-	public boolean estaDisponible(ComisionObj _comision) {
+	public boolean estaDisponible(Comision _comision) {
 		return false;
 	}
 
 	@Override
-	public boolean cumplePara(ComisionObj _comision) {
+	public boolean cumplePara(Comision _comision) {
 		return false;
 	}
 

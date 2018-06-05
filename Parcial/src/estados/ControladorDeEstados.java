@@ -2,7 +2,7 @@ package estados;
 
 import java.util.ArrayList;
 import java.util.List;
-import comision.ComisionObj;
+import comision.Comision;
 import estadosComision.*;
 
 public class ControladorDeEstados {
@@ -28,7 +28,7 @@ public class ControladorDeEstados {
 			posiblesEstados.remove(_estado);
 		}
 	
-		public EstadoComision estadoPertenece(ComisionObj _comision) { //Preguntar: Como hacer para recordar el ultimo estado.
+		public EstadoComision estadoPertenece(Comision _comision) { //Preguntar: Como hacer para recordar el ultimo estado.
 																	   //
 			EstadoComision resultado = posiblesEstados.get(0);		   //Alguna otra forma de inicializar el estado? un NUll object?.
 			                                						   //
