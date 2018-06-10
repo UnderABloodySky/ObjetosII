@@ -34,5 +34,10 @@ public class ArticuloCientifico implements Articulo{
 		@Override
 		public boolean trataSobre(String interes) {
 			return palabrasClaves.contains(interes);
+		}
+
+		@Override
+		public boolean esPalabraDeInteres(String interes) {
+			return autores.contains(interes) || filiacion.equals(interes) || tipoDeArticulo.equals(interes) || lugar.equals(interes);
 		}			
 }
